@@ -111,15 +111,6 @@ font-family:Arial, sans-serif;
 color:#555555;
 }
 
-#copyright
-{
-position:absolute;
-top:20px;
-left:610px;
-font-size:12px;
-font-family:Arial, sans-serif;
-color:#555555;
-}
 
 #links
 {
@@ -204,17 +195,14 @@ frameBorder:0px;
 width:1024px;
 height:20px;
 position:relative;
-top:0px;
+top:25px;
 left:12px;
 background-color:#ffffff;
 text-align:center;
+font-family:Arial, sans-serif;
 }
-.topmiddle
-{
-position:relative;
-top:0px;
-left:512px;
-}
+
+
 
 a:link {color:#666666;}    /* unvisited link */
 a:visited {color:#666666;} /* visited link */
@@ -271,10 +259,10 @@ a:active {color:#888888;}
 		
 	</div>
 
-		<iframe name="banner" id="banner" frameborder="0" src="images/links/back2.jpg">
-		
+		<div name="banner" id="banner" frameborder="0" vspace=0 hspace=0 marginwidth=0 marginheight=0>
+		<a href="reel.html" target="player" onclick="hideBanner()"><img src="images/links/back2.jpg"></a>
 
-		</iframe>
+		</div>
 	
 
 	
@@ -290,7 +278,7 @@ a:active {color:#888888;}
 
 	<div id="left-column">	
 
-		<a href="https://www.youtube.com/embed/By99EJdS7SM" target="player" >
+		<a href="https://www.youtube.com/embed/By99EJdS7SM" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/Ocean3.jpg" alt="Oceans" class="hvrbox-layer_bottom" width="497" height="141">
 			<div class="hvrbox-layer_top">
@@ -301,7 +289,7 @@ a:active {color:#888888;}
 
 		<br><br>
 	
-		<a href="https://www.youtube.com/embed/4qeTN9ejoNo" target="player" >
+		<a href="https://www.youtube.com/embed/4qeTN9ejoNo" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/614.jpg" alt="Nashville EP 614" class="hvrbox-layer_bottom" width="497" height="141">
 			<div class="hvrbox-layer_top">
@@ -312,7 +300,7 @@ a:active {color:#888888;}
 
 		<br><br>
 	
-		<a href="https://www.youtube.com/embed/26z9vjVhdbk" target="player" >
+		<a href="https://www.youtube.com/embed/26z9vjVhdbk" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/fender.jpg" alt="MYCHANIC - We Speak Rev" class="hvrbox-layer_bottom" width="497" height="141">
 			<div class="hvrbox-layer_top">
@@ -323,7 +311,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/bHwLRDM0x9A" target="player" >
+		<a href="https://www.youtube.com/embed/bHwLRDM0x9A" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/butido.jpg" alt="Jerrod Neimann - But I Do" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -335,7 +323,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/tUroeXjc7rw" target="player" >
+		<a href="https://www.youtube.com/embed/tUroeXjc7rw" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/wrong.jpg" alt="The Uh Huhs - Wrong Young Lady" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -347,7 +335,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/DMgFBjCXqYo" target="player" >
+		<a href="https://www.youtube.com/embed/DMgFBjCXqYo" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/608.jpg" alt="Nashville EP 608" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -358,7 +346,7 @@ a:active {color:#888888;}
 
 
 		<br><br>
-		<a href="https://www.youtube.com/embed/DMgFBjCXqYo" target="player" >
+		<a href="https://www.youtube.com/embed/DMgFBjCXqYo" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/613.jpg" alt="Nashville EP 613" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -373,7 +361,7 @@ a:active {color:#888888;}
 
 	<div id="right-column">
 
-		<a href="https://www.youtube.com/embed/X-JBooW2oeM" target="player" >
+		<a href="https://www.youtube.com/embed/X-JBooW2oeM" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/Dust3.jpg" alt="The Dust Storm" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -384,7 +372,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/Or5pFROccZs" target="player" >
+		<a href="https://www.youtube.com/embed/Or5pFROccZs" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/Josie.jpg" alt="Josie Dunne - Cool With It" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -395,7 +383,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/CrZ8vmQGH2g" target="player" >
+		<a href="https://www.youtube.com/embed/CrZ8vmQGH2g" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/comeback.jpg" alt="Jerrod Neimann - Comeback" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -406,7 +394,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/cfBuyVFZFAU" target="player" >
+		<a href="https://www.youtube.com/embed/cfBuyVFZFAU" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/igotthis.jpg" alt="Jerrod Neimann - I Got This" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -417,7 +405,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/8BBLydrUFlc" target="player" >
+		<a href="https://www.youtube.com/embed/8BBLydrUFlc" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/swamp.jpg" alt="Swampbird - Jackson MS" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -428,7 +416,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/Xbl_HIUCjnY" target="player" >
+		<a href="https://www.youtube.com/embed/Xbl_HIUCjnY" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/607.jpg" alt="Nashville EP 607" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -439,7 +427,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/Xbl_HIUCjnY" target="player" >
+		<a href="https://www.youtube.com/embed/Xbl_HIUCjnY" target="player" onclick="hideBanner()">
 		<div class="hvrbox">
 			<img src="images/links/615.jpg" alt="Nashville EP 615" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -448,13 +436,15 @@ a:active {color:#888888;}
 		</div>
 		</a>
 	</div>
+
+
  
 	</div>
 	
-	<br><br><br>
+
 	<div id="foot">
 		
-	Copyright 2018 Tim Sutherland. All rights reserved.
+	© Copyright 2018 Tim Sutherland. All rights reserved.
 	</div>
 
 
