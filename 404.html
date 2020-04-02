@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156978484-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156978484-1');
+</script>
+<style>
+
+
+
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 24px;
+	font-family:verdana;
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+
+ul
+{
+text-align: center;
+}
+
+a:link
+{
+text-decoration:none;
+}
+
+
+
+
+#credits li
+{
+display: inline;
+list-style-type: none;
+position:relative;
+left:-10px;
+margin:0px;
+padding-right:14px;
+font-size:19px;
+font-family:Arial, sans-serif;
+color:#222222;
+}
+
+
+#links
+{
+position:relative;
+top:0px;
+left:12px;
+width:1034px;
+height:auto;
+
+
+}
+
+#left-column
+{
+position:relative;
+top:26px;
+left:0px;
+width:497px;
+height:auto;
+}
+
+#right-column
+{
+position:absolute;
+top:26px;
+left:527px;
+width:497px;
+height:auto;
+
+}
+
+#main
+{
+width:1048px;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+padding-right:6px;
+
+}
+
+#name
+{
+position:relative;
+left:0px;
+width:1024px;
+height:150px;
+margin-left:auto;
+margin-right:auto;
+padding:0px;
+
+}
+
+
+#banner
+{
+position:relative;
+top:0px;
+left:12px;
+width:1024px;
+height:260px;
+/*background-color:#ffffff;*/
+
+}
+#player
+{
+position:relative;
+top:0px;
+left:12px;
+width:1024px;
+height:420px;
+/*background-color:#ffffff;*/
+display: none;
+overflow: none;
+margin:0px;
+padding:0px;
+border:none;
+outline:none;
+
+
+}
+
+
+#foot
+{
+width:1024px;
+height:30px;
+position:relative;
+top:25px;
+left:12px;
+
+text-align:center;
+font-family:Arial, sans-serif;
+color:#888888;
+}
+
+
+
+a:link {color:#666666;}    /* unvisited link */
+a:visited {color:#666666;} /* visited link */
+a:hover {color:#888888;}   /* mouse over link */
+a:active {color:#888888;}
+
+.mySlides {display:none;}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+h1
+{
+  font-family:Arial, sans-serif;
+  font-size:200px;
+  margin-bottom: 0px;
+  margin-top:40px;
+}
+h2
+{
+  font-family:Arial, sans-serif;
+  font-size:42px;
+  margin-bottom: 10px;
+  margin-top:0px;
+}
+h3
+{
+  font-family:Arial, sans-serif;
+  font-size:25px;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+</style>
+
+
+
+</head>
+
+<body style="background-color:#ffffff">
+
+<div id="main">
+
+	<div id="name">
+		<br>
+
+		<a href="index.html"><img src="images/text4136.png" alt="Tim Sutherland"></a>
+		<ul id="credits">
+			<li><a href="reel.html" target="player" onclick="hideBanner()" >IATSE 600 Cinematographer Reel</a></li>
+			<li>|</li>
+			<li><a href="steadi.html" target="player" onclick="hideBanner()" >SOC Steadicam OP Reel</a></li>
+			<li>|</li>
+			<li><a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram Feed</a></li>
+			<li>|</li>
+			<li><a href="http://imdb.tim-sutherland.com" target="_blank">imdb.tim-sutherland.com</a></li>
+		</ul>
+
+
+
+	</div>
+
+
+
+
+
+	<div id="links">
+
+
+	<div id="left-column">
+
+		<a href="index.html">
+
+			<img src="images/sad.png" width="400px" height="400px">
+
+
+		</a>
+
+
+
+
+	</div>
+
+	<div id="right-column">
+
+
+
+
+		<div >
+			<h1>404</h1>
+
+      <h2>Page Not Found</h2>
+
+      <a href="index.html"><h3>Continue to Home Page...</h3?</a>
+		</div>
+
+
+
+
+	</div>
+
+
+
+	</div>
+<br><br><br>
+
+	<div id="foot">
+	<br>
+	<a href="http://icg600.com" target="_blank">Cinematographer's Guild</a> | <a href="http://soc.org" target="_blank">Society of Camera Operators</a> | <a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram Feed</a> | <a href="https://www.imdb.com/name/nm2295019/" target="_blank">IMDB Page</a> | <a href="mailto:tim@tim-sutherland.com?subject=Request for References">Request References</a>
+	<br><br>
+	&copy; Copyright 2020 Tim Sutherland. All rights reserved.  Terms and Conditions.
+	<br>
+	-----
+	</div>
+
+
+
+</div>
+
+<script>
+function hideBanner() {
+    var x = document.getElementById("banner");
+    {
+        x.style.display = "none";
+    }
+        var y = document.getElementById("player");
+    {
+        y.style.display = "block";
+    }
+}
+</script>
+
+<script>
+function hidePlayer() {
+    var x = document.getElementById("player");
+    {
+        x.style.display = "none";
+    }
+    var y = document.getElementById("banner");
+    {
+        y.style.display = "block";
+    }
+}
+</script>
+</body>
+</html>
