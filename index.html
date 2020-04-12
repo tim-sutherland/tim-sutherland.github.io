@@ -171,21 +171,25 @@ height:260px;
 }
 #player
 {
-position:relative;
-top:0px;
-left:12px;
-width:1024px;
-height:420px;
-/*background-color:#ffffff;*/
-display: none;
-overflow: none;
-margin:0px;
-padding:0px;
-border:none;
-outline:none;
 
+  width:1024px;
+  height:420px;
+  display:none;
+  width:1024px;       /* set this to approximate width of entire page you're embedding */
+  height:420px;      /* determines where the bottom of the page cuts off */
+  margin-left:12px; /* clipping left side of page */
+  margin-top:-0px;  /* clipping top of page */
+  overflow:hidden;
+
+  /* resize seems to inherit in at least Firefox */
+  -webkit-resize:none;
+  -moz-resize:none;
+  resize:none;
+  border:none;
 
 }
+
+
 
 
 #foot
@@ -245,9 +249,9 @@ a:active {color:#888888;}
 
 		<a href="index.html"><img src="images/text4136.png" alt="Tim Sutherland"></a>
 		<ul id="credits">
-			<li><a href="reel.html" target="player" onclick="hideBanner(); scrollWin()" >IATSE 600 Cinematographer Reel</a></li>
+			<li><a href="dp.html#video" target="player" onclick="hideBanner(); scrollWin()" >IATSE 600 Cinematographer Reel</a></li>
 			<li>|</li>
-			<li><a href="steadi.html" target="player" onclick="hideBanner(); scrollWin()" >SOC Steadicam OP Reel</a></li>
+			<li><a href="steadicam.html#video" target="player" onclick="hideBanner(); scrollWin()" >SOC Steadicam OP Reel</a></li>
 			<li>|</li>
 			<li><a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram Feed</a></li>
 			<li>|</li>
@@ -264,8 +268,7 @@ a:active {color:#888888;}
 		</div>
 
 
-
-		<iframe name="player" id="player"  frameBorder="0" src=""  vspace=0 hspace=0 marginwidth=0 marginheight=0  allowfullscreen>
+		<iframe name="player" id="player"  scrolling="no" src="" >
 
 
 		</iframe>
