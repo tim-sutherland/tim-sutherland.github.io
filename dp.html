@@ -166,18 +166,16 @@ top:0px;
 left:12px;
 width:1024px;
 height:260px;
-display:none;
 /*background-color:#ffffff;*/
-
+display:none;
 }
+
 #player
 {
 
   width:1024px;
   height:420px;
   display:none;
-  width:1024px;       /* set this to approximate width of entire page you're embedding */
-  height:420px;      /* determines where the bottom of the page cuts off */
   margin-left:12px; /* clipping left side of page */
   margin-top:-0px;  /* clipping top of page */
   overflow:hidden;
@@ -234,7 +232,7 @@ a:active {color:#888888;}
     background: #555;
 }
 
-#video
+#reel
 {
   position:relative;
   top:0px;
@@ -253,9 +251,33 @@ background-color: #000000;
 -webkit-backface-visibility: hidden;
 -moz-backface-visibility: hidden;
 }
-video:focus {
+reel:focus {
      outline: 0;
 }
+#steadi
+{
+  position:relative;
+  top:0px;
+  left:12px;
+  width:1024px;
+  height:420px;
+overflow:hidden;
+scroll:none;
+
+padding:0px;
+margin:0px;
+border:none;
+outline:none;]
+background-color: #000000;
+-webkit-mask-image: -webkit-radial-gradient(white, black);
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+display:none;
+}
+steadi:focus {
+     outline: 0;
+}
+
 </style>
 
 
@@ -271,9 +293,9 @@ video:focus {
 
 		<a href="index.html"><img src="images/text4136.png" alt="Tim Sutherland"></a>
     <ul id="credits">
-      <li><a href="#" onclick="showVideo()" >IATSE 600 Cinematographer Reel</a></li>
+      <li><a href="#" onclick="showReel()" >IATSE 600 Cinematographer Reel</a></li>
       <li>|</li>
-      <li><a href="steadicam.html" >SOC Steadicam OP Reel</a></li>
+      <li><a href="#" onclick="showSteadi()" >SOC Steadicam OP Reel</a></li>
       <li>|</li>
       <li><a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram Feed</a></li>
       <li>|</li>
@@ -284,31 +306,24 @@ video:focus {
 
 	</div>
 
-		<div name="banner" id="banner" frameborder="0" vspace=0 hspace=0 marginwidth=0 marginheight=0>
+	<div name="banner" id="banner" frameborder="0" vspace=0 hspace=0 marginwidth=0 marginheight=0>
+    <a href="#" onclick="showReel()"x target="player" onclick="hideBanner()"><img src="images/banner.jpg"></a>
+	</div>
 
-		</div>
+  <div id="reel">
+    <video width="1024px" height="420px"  style="background-color: #000000" src="https://drive.google.com/uc?id=1AE73S0QCU5pvhVX8XoNbK69kCPIOGbiS"  controls poster="images/reelbanner-01.jpg" preload="metadata"></video>
+  </div>
 
+  <div id="steadi">
+    <video width="1024px" height="420px"  style="background-color: #000000" src="https://www.googleapis.com/drive/v3/files/1zK3cfhaaNaABgfavPg0Mo1EudAJOUNk1?alt=media&key=AIzaSyBrvJ405TQ1LptxQQUkQJVNmTIKuv_pL4I"  controls poster="images/steadibanner-02.jpg" preload="metadata"></video>
+  </div>
 
-
-    <div id="video">
-
-
-
-      <video width="1024px" height="420px"  style="background-color: #000000" src="https://drive.google.com/uc?id=1AE73S0QCU5pvhVX8XoNbK69kCPIOGbiS"  controls poster="images/reelbanner-01.jpg" preload="metadata"></video>
-    </div>
-
-    <iframe name="player" id="player"  scrolling="no" src="" >
-
-
-    </iframe>
+  <iframe name="player" id="player"  scrolling="no" src="" >
+  </iframe>
 
 
 	<div id="links">
-
-
-
-
-	<div id="left-column">
+   <div id="left-column">
 
 		<a href="https://www.youtube.com/embed/kTSUdZ8I0Ks" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
@@ -389,9 +404,6 @@ video:focus {
 		</div>
 		</a>
 
-
-
-
     <br><br>
 
 		<a href="https://www.youtube.com/embed/Xbl_HIUCjnY" target="player" onclick="showPlayer(); scrollWin()">
@@ -404,11 +416,9 @@ video:focus {
 		</a>
 
 
-	</div>
+	 </div>
 
-	<div id="right-column">
-
-
+	 <div id="right-column">
 
 		<a href="https://www.youtube.com/embed/OF9mSm4cj34" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
@@ -506,13 +516,9 @@ video:focus {
 		</div>
 		</a>
 
+	 </div>
 
 	</div>
-
-
-
-	</div>
-
 
 	<div id="foot">
 	<br>
@@ -523,21 +529,43 @@ video:focus {
 	-----
 	</div>
 
-
-
 </div>
 
 <script>
+function showSteadi() {
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "block";
+    }
+    var x = document.getElementById("banner");
+    {
+        x.style.display = "none";
+    }
+    var y = document.getElementById("player");
+    {
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "none";
+    }
+}
+</script>
+<script>
 function showBanner() {
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
     var x = document.getElementById("banner");
     {
         x.style.display = "block";
     }
-        var y = document.getElementById("player");
+    var y = document.getElementById("player");
     {
         y.style.display = "none";
     }
-    var z = document.getElementById("video");
+    var z = document.getElementById("reel");
     {
         z.style.display = "none";
     }
@@ -546,7 +574,11 @@ function showBanner() {
 
 <script>
 function showPlayer() {
-    var x = document.getElementById("player");
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
+      var x = document.getElementById("player");
     {
         x.style.display = "block";
     }
@@ -554,14 +586,18 @@ function showPlayer() {
     {
         y.style.display = "none";
     }
-    var z = document.getElementById("video");
+    var z = document.getElementById("reel");
     {
         z.style.display = "none";
     }
 }
 </script>
 <script>
-function showVideo() {
+function showReel() {
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
     var x = document.getElementById("player");
     {
         x.style.display = "none";
@@ -570,7 +606,7 @@ function showVideo() {
     {
         y.style.display = "none";
     }
-    var z = document.getElementById("video");
+    var z = document.getElementById("reel");
     {
         z.style.display = "block";
     }

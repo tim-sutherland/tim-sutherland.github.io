@@ -9,9 +9,9 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-156978484-1');
-
 </script>
 <style>
+
 
 
 .hvrbox,
@@ -169,14 +169,13 @@ height:260px;
 /*background-color:#ffffff;*/
 
 }
+
 #player
 {
 
   width:1024px;
   height:420px;
   display:none;
-  width:1024px;       /* set this to approximate width of entire page you're embedding */
-  height:420px;      /* determines where the bottom of the page cuts off */
   margin-left:12px; /* clipping left side of page */
   margin-top:-0px;  /* clipping top of page */
   overflow:hidden;
@@ -188,8 +187,6 @@ height:260px;
   border:none;
 
 }
-
-
 
 
 #foot
@@ -234,6 +231,54 @@ a:active {color:#888888;}
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+#reel
+{
+  position:relative;
+  top:0px;
+  left:12px;
+  width:1024px;
+  height:420px;
+overflow:hidden;
+scroll:none;
+
+padding:0px;
+margin:0px;
+border:none;
+outline:none;]
+background-color: #000000;
+-webkit-mask-image: -webkit-radial-gradient(white, black);
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+display:none;
+}
+reel:focus {
+     outline: 0;
+}
+#steadi
+{
+  position:relative;
+  top:0px;
+  left:12px;
+  width:1024px;
+  height:420px;
+overflow:hidden;
+scroll:none;
+
+padding:0px;
+margin:0px;
+border:none;
+outline:none;]
+background-color: #000000;
+-webkit-mask-image: -webkit-radial-gradient(white, black);
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+display:none;
+}
+steadi:focus {
+     outline: 0;
+}
+
 </style>
 
 
@@ -248,39 +293,40 @@ a:active {color:#888888;}
 		<br>
 
 		<a href="index.html"><img src="images/text4136.png" alt="Tim Sutherland"></a>
-		<ul id="credits">
-			<li><a href="dp.html#video" target="player" onclick="hideBanner()" >IATSE 600 Cinematographer Reel</a></li>
-			<li>|</li>
-			<li><a href="steadicam.html#video" target="player" onclick="hideBanner()" >SOC Steadicam OP Reel</a></li>
-			<li>|</li>
-			<li><a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram Feed</a></li>
-			<li>|</li>
-			<li><a href="http://imdb.tim-sutherland.com" target="_blank">imdb.tim-sutherland.com</a></li>
-		</ul>
+    <ul id="credits">
+      <li><a href="#" onclick="showReel()" >IATSE 600 Cinematographer Reel</a></li>
+      <li>|</li>
+      <li><a href="#" onclick="showSteadi()" >SOC Steadicam OP Reel</a></li>
+      <li>|</li>
+      <li><a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram Feed</a></li>
+      <li>|</li>
+      <li><a href="http://imdb.tim-sutherland.com" target="_blank">imdb.tim-sutherland.com</a></li>
+    </ul>
 
 
 
 	</div>
 
-		<div name="banner" id="banner" frameborder="0" vspace=0 hspace=0 marginwidth=0 marginheight=0>
-		<a href="reel.html" target="player" onclick="hideBanner()"><img src="images/banner.jpg"></a>
+	<div name="banner" id="banner" frameborder="0" vspace=0 hspace=0 marginwidth=0 marginheight=0>
+    <a href="#" onclick="showReel()"x target="player" onclick="hideBanner()"><img src="images/banner.jpg"></a>
+	</div>
 
-		</div>
+  <div id="reel">
+    <video width="1024px" height="420px"  style="background-color: #000000" src="https://drive.google.com/uc?id=1AE73S0QCU5pvhVX8XoNbK69kCPIOGbiS"  controls poster="images/reelbanner-01.jpg" preload="metadata"></video>
+  </div>
 
+  <div id="steadi">
+    <video width="1024px" height="420px"  style="background-color: #000000" src="https://www.googleapis.com/drive/v3/files/1zK3cfhaaNaABgfavPg0Mo1EudAJOUNk1?alt=media&key=AIzaSyBrvJ405TQ1LptxQQUkQJVNmTIKuv_pL4I"  controls poster="images/steadibanner-02.jpg" preload="metadata"></video>
+  </div>
 
-		<iframe name="player" id="player"  scrolling="no" src="" >
-
-
-		</iframe>
-
+  <iframe name="player" id="player"  scrolling="no" src="" >
+  </iframe>
 
 
 	<div id="links">
+   <div id="left-column">
 
-
-	<div id="left-column">
-
-		<a href="https://www.youtube.com/embed/kTSUdZ8I0Ks?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/kTSUdZ8I0Ks" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/cg.jpg" alt="Cigarettes & Gasoline" class="hvrbox-layer_bottom" width="497" height="141">
 			<div class="hvrbox-layer_top">
@@ -290,7 +336,7 @@ a:active {color:#888888;}
 		</a>
 
 		<br><br>
-		<a href="https://www.youtube.com/embed/1kpO7woOopM?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/1kpO7woOopM" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/caughtup.jpg" alt="Caught Up in the Country" class="hvrbox-layer_bottom" width="497" height="141">
 			<div class="hvrbox-layer_top">
@@ -300,7 +346,7 @@ a:active {color:#888888;}
 		</a>
 
 		<br><br>
-		<a href="https://www.youtube.com/embed/Bz7mM-g0dBM?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/Bz7mM-g0dBM" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/613.jpg" alt="Nashville EP 613" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -310,7 +356,7 @@ a:active {color:#888888;}
 		</a>
 
 		<br><br>
-		<a href="https://www.youtube.com/embed/bHwLRDM0x9A?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/bHwLRDM0x9A" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/butido.jpg" alt="Jerrod Neimann - But I Do" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -320,7 +366,7 @@ a:active {color:#888888;}
 		</a>
 
 		<br><br>
-		<a href="https://www.youtube.com/embed/26z9vjVhdbk?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/26z9vjVhdbk" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/fender.jpg" alt="MYCHANIC - We Speak Rev" class="hvrbox-layer_bottom" width="497" height="141">
 			<div class="hvrbox-layer_top">
@@ -330,7 +376,7 @@ a:active {color:#888888;}
 		</a>
 
 		<br><br>
-		<a href="https://www.youtube.com/embed/4qeTN9ejoNo?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/4qeTN9ejoNo" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/614.jpg" alt="Nashville EP 614" class="hvrbox-layer_bottom" width="497" height="141">
 			<div class="hvrbox-layer_top">
@@ -340,7 +386,7 @@ a:active {color:#888888;}
 		</a>
 
 		<br><br>
-		<a href="https://www.youtube.com/embed/By99EJdS7SM" target="player" onclick="hideBanner()">
+		<a href="https://www.youtube.com/embed/By99EJdS7SM" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/Ocean3.jpg" alt="Oceans" class="hvrbox-layer_bottom" width="497" height="141">
 			<div class="hvrbox-layer_top">
@@ -350,7 +396,7 @@ a:active {color:#888888;}
 		</a>
 
 		<br><br>
-		<a href="https://www.youtube.com/embed/DMgFBjCXqYo?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/DMgFBjCXqYo" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/608.jpg" alt="Nashville EP 608" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -359,12 +405,9 @@ a:active {color:#888888;}
 		</div>
 		</a>
 
-
-
-
     <br><br>
 
-		<a href="https://www.youtube.com/embed/Xbl_HIUCjnY?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/Xbl_HIUCjnY" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/615.jpg" alt="Nashville EP 615" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -374,13 +417,11 @@ a:active {color:#888888;}
 		</a>
 
 
-	</div>
+	 </div>
 
-	<div id="right-column">
+	 <div id="right-column">
 
-
-
-		<a href="https://www.youtube.com/embed/OF9mSm4cj34?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/OF9mSm4cj34" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/wag.jpg" alt="Wedding at Graceland" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -391,7 +432,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/BVxMFyt_8E8?rel=0&modestbranding=1" target="player" onclick="hideBanner()">
+		<a href="https://www.youtube.com/embed/BVxMFyt_8E8" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/tdugger.jpg" alt="Tim Dugger - You're Gonna Love Me" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -401,7 +442,7 @@ a:active {color:#888888;}
 		</a>
 
 		<br><br>
-		<a href="https://www.youtube.com/embed/WYbpN88vjdg?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/WYbpN88vjdg" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/justwhattosay.jpg" alt="Just What To Say" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -412,7 +453,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/X-JBooW2oeM?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/X-JBooW2oeM" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/Dust3.jpg" alt="The Dust Storm" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -423,7 +464,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/Or5pFROccZs?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/Or5pFROccZs" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/Josie.jpg" alt="Josie Dunne - Cool With It" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -434,7 +475,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/_X2Xg0O-V44?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/_X2Xg0O-V44" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/ee.jpg" alt="If You Met Me First" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -445,7 +486,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/CrZ8vmQGH2g?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/CrZ8vmQGH2g" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/comeback.jpg" alt="Jerrod Neimann - Comeback" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -456,7 +497,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/cfBuyVFZFAU?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/cfBuyVFZFAU" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/igotthis.jpg" alt="Jerrod Neimann - I Got This" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -467,7 +508,7 @@ a:active {color:#888888;}
 
 		<br><br>
 
-		<a href="https://www.youtube.com/embed/QCLnFYKP_PQ?rel=0&modestbranding=1" target="player" onclick="hideBanner(); scrollWin()">
+		<a href="https://www.youtube.com/embed/QCLnFYKP_PQ" target="player" onclick="showPlayer(); scrollWin()">
 		<div class="hvrbox">
 			<img src="images/links/607.jpg" alt="Nashville EP 607" class="hvrbox-layer_bottom" width="497" height="141" >
 			<div class="hvrbox-layer_top">
@@ -476,18 +517,12 @@ a:active {color:#888888;}
 		</div>
 		</a>
 
+	 </div>
 
 	</div>
-
-
-
-	</div>
-
 
 	<div id="foot">
 	<br>
- <!--<a href="reel.html" target="player" onclick="hideBanner()" >Cinematography Reel</a>  |  <a href="steadi.html" target="player" onclick="hideBanner()" >Steadicam Demo Reel</a>  | <a href="oners.html" target="player" onclick="hideBanner()" >Steadicam Oners</a>  |  <a href="techno.html" target="_blank">Technocrane OP Reel</a>  |  <a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram Feed</a>  |  <a href="https://www.imdb.com/name/nm2295019/" target="_blank">IMDB Page</a>  |  <a href="mailto:tim@tim-sutherland.com?subject=Request for References">Request References</a>
-  <br> <br> -->
 	<a href="http://icg600.com" target="_blank">Cinematographer's Guild</a> | <a href="http://soc.org" target="_blank">Society of Camera Operators</a> | <a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram Feed</a> | <a href="https://www.imdb.com/name/nm2295019/" target="_blank">IMDB Page</a> | <a href="mailto:tim@tim-sutherland.com?subject=Request for References">Request References</a>
 	<br><br>
 	&copy; Copyright 2020 Tim Sutherland. All rights reserved.  Terms and Conditions.
@@ -495,32 +530,86 @@ a:active {color:#888888;}
 	-----
 	</div>
 
-
-
 </div>
 
 <script>
-function hideBanner() {
+function showSteadi() {
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "block";
+    }
     var x = document.getElementById("banner");
     {
         x.style.display = "none";
     }
-        var y = document.getElementById("player");
+    var y = document.getElementById("player");
     {
-        y.style.display = "block";
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "none";
+    }
+}
+</script>
+<script>
+function showBanner() {
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
+    var x = document.getElementById("banner");
+    {
+        x.style.display = "block";
+    }
+    var y = document.getElementById("player");
+    {
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "none";
     }
 }
 </script>
 
 <script>
-function hidePlayer() {
+function showPlayer() {
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
+      var x = document.getElementById("player");
+    {
+        x.style.display = "block";
+    }
+    var y = document.getElementById("banner");
+    {
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "none";
+    }
+}
+</script>
+<script>
+function showReel() {
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
     var x = document.getElementById("player");
     {
         x.style.display = "none";
     }
     var y = document.getElementById("banner");
     {
-        y.style.display = "block";
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "block";
     }
 }
 </script>
@@ -533,7 +622,5 @@ function scrollWin() {
 });
 }
 </script>
-
-
 </body>
 </html>
