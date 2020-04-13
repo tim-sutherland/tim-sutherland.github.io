@@ -306,6 +306,11 @@ steadi:focus {
 
 
 	</div>
+  <script>
+  if (isMobile) {
+        $(".videoplayer").find('video').attr('poster', 'images/reelbanner-01.jpg');
+  }
+  </script>
 
 	<div name="banner" id="banner" frameborder="0" vspace=0 hspace=0 marginwidth=0 marginheight=0>
     <a href="#" onclick="showReel()"x target="player" onclick="hideBanner()"><img src="images/banner.jpg"></a>
@@ -622,10 +627,6 @@ function scrollWin() {
 });
 }
 </script>
-<script>
-if (isMobile) {
-      $(".videoplayer").find('video').attr('poster', 'images/reelbanner-01.jpg');
-}
-</script>
+
 </body>
 </html>
