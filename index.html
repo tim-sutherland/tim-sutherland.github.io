@@ -10,6 +10,24 @@
 
   gtag('config', 'UA-156978484-1');
 </script>
+
+<script type = "text/javascript">
+  function redirect()
+  {
+    if (window.location.hash === '#steadicam') {showSteadi()}
+    else if (window.location.hash === '#dp') {showReel()}
+    else {showBanner()}
+  }
+    setTimeout("redirect()", 0000);
+
+</script>
+
+<script type = "text/javascript">
+  function removehash() {
+        history.replaceState(null, null, ' ');
+      }
+      setTimeout("removehash()", 0001);
+</script>
 <style>
 
 
@@ -307,7 +325,7 @@ steadi:focus {
 
 	</div>
 
-	<div name="banner" id="banner" frameborder="0" vspace=0 hspace=0 marginwidth=0 marginheight=0>
+	<div name="banner" id="banner" frameborder="0" vspace=0 hspace=0 marginwidth=0 marginheight=0 display="none">
     <a href="#" onclick="showReel()"x target="player" onclick="hideBanner()"><img src="images/banner.jpg"></a>
 	</div>
 
