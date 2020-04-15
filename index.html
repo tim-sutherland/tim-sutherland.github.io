@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Tim Sutherland</title>
+<link href="stylesheet.css" rel="stylesheet">
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156978484-1"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -26,284 +30,12 @@
   function removehash() {
         history.replaceState(null, null, ' ');
       }
-      setTimeout("removehash()", 0001);
+      setTimeout("removehash()", 0101);
 </script>
-<style>
-
-
-
-.hvrbox,
-.hvrbox * {
-	box-sizing: border-box;
-}
-.hvrbox {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	max-width: 100%;
-	height: auto;
-}
-.hvrbox img {
-	max-width: 100%;
-}
-.hvrbox .hvrbox-layer_bottom {
-	display: block;
-
-}
-.hvrbox .hvrbox-layer_top {
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	color: #fff;
-	padding: 15px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
-}
-.hvrbox:hover .hvrbox-layer_top,
-.hvrbox.active .hvrbox-layer_top {
-	opacity: 1;
-}
-.hvrbox .hvrbox-text {
-	text-align: center;
-	font-size: 24px;
-	font-family:verdana;
-	display: inline-block;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	-moz-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-.hvrbox .hvrbox-text_mobile {
-	font-size: 15px;
-	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
-	border-top: 1px solid rgba(179, 179, 179, 0.7);
-	margin-top: 5px;
-	padding-top: 2px;
-	display: none;
-}
-.hvrbox.active .hvrbox-text_mobile {
-	display: block;
-}
-
-
-ul
-{
-text-align: center;
-}
-
-a:link
-{
-text-decoration:none;
-}
-
-
-
-
-#credits li
-{
-display: inline;
-list-style-type: none;
-position:relative;
-left:-10px;
-margin:0px;
-padding-right:14px;
-font-size:19px;
-font-family:Arial, sans-serif;
-color:#222222;
-}
-
-
-#links
-{
-position:relative;
-top:0px;
-left:12px;
-width:1034px;
-height:auto;
-
-
-}
-
-#left-column
-{
-position:relative;
-top:26px;
-left:0px;
-width:497px;
-height:auto;
-}
-
-#right-column
-{
-position:absolute;
-top:26px;
-left:527px;
-width:497px;
-height:auto;
-
-}
-
-#main
-{
-width:1048px;
-height:auto;
-margin-left:auto;
-margin-right:auto;
-padding-right:6px;
-
-}
-
-#name
-{
-position:relative;
-left:0px;
-width:1024px;
-height:150px;
-margin-left:auto;
-margin-right:auto;
-padding:0px;
-
-}
-
-
-#banner
-{
-position:relative;
-top:0px;
-left:12px;
-width:1024px;
-height:260px;
-/*background-color:#ffffff;*/
-
-}
-
-#player
-{
-
-  width:1024px;
-  height:420px;
-  display:none;
-  margin-left:12px; /* clipping left side of page */
-  margin-top:-0px;  /* clipping top of page */
-  overflow:hidden;
-
-  /* resize seems to inherit in at least Firefox */
-  -webkit-resize:none;
-  -moz-resize:none;
-  resize:none;
-  border:none;
-
-}
-
-
-#foot
-{
-width:1024px;
-height:30px;
-position:relative;
-top:25px;
-left:12px;
-
-text-align:center;
-font-family:Arial, sans-serif;
-color:#888888;
-}
-
-
-
-a:link {color:#666666;}    /* unvisited link */
-a:visited {color:#666666;} /* visited link */
-a:hover {color:#888888;}   /* mouse over link */
-a:active {color:#888888;}
-
-.mySlides {display:none;}
-
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-#reel
-{
-  position:relative;
-  top:0px;
-  left:12px;
-  width:1024px;
-  height:420px;
-overflow:hidden;
-scroll:none;
-
-padding:0px;
-margin:0px;
-border:none;
-outline:none;]
-background-color: #000000;
--webkit-mask-image: -webkit-radial-gradient(white, black);
--webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
-display:none;
-}
-video:focus {
-     outline: 0;
-}
-#steadi
-{
-  position:relative;
-  top:0px;
-  left:12px;
-  width:1024px;
-  height:420px;
-overflow:hidden;
-scroll:none;
-
-padding:0px;
-margin:0px;
-border:none;
-outline:none;]
-background-color: #000000;
--webkit-mask-image: -webkit-radial-gradient(white, black);
--webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
-display:none;
-}
-steadi:focus {
-     outline: 0;
-}
-
-</style>
-
-
 
 </head>
 
-<body style="background-color:#ffffff">
+<body>
 
 <div id="main">
 
@@ -321,11 +53,9 @@ steadi:focus {
       <li><a href="http://imdb.tim-sutherland.com" target="_blank">imdb.tim-sutherland.com</a></li>
     </ul>
 
-
-
 	</div>
 
-	<div name="banner" id="banner" frameborder="0" vspace=0 hspace=0 marginwidth=0 marginheight=0 display="none">
+	<div name="banner" id="banner">
     <a href="#" onclick="showReel()"x target="player" onclick="hideBanner()"><img src="images/banner.jpg"></a>
 	</div>
 
@@ -339,7 +69,6 @@ steadi:focus {
 
   <iframe name="player" id="player"  scrolling="no" src="" >
   </iframe>
-
 
 	<div id="links">
    <div id="left-column">
@@ -433,7 +162,6 @@ steadi:focus {
 			</div>
 		</div>
 		</a>
-
 
 	 </div>
 
@@ -640,5 +368,6 @@ function scrollWin() {
 });
 }
 </script>
+
 </body>
 </html>
