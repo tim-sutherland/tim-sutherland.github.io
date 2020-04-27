@@ -104,8 +104,19 @@ top:0px;
 left:12px;
 width:1034px;
 height:auto;
+font-family:Arial, sans-serif;
+color:#222222;
+}
 
-
+#terms
+{
+position:relative;
+top:30px;
+left:112px;
+width:834px;
+height:auto;
+font-family:Arial, sans-serif;
+color:#333333;
 }
 
 #left-column
