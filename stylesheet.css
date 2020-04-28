@@ -77,7 +77,15 @@ a:link
 text-decoration:none;
 }
 
+#credits
+{
+	position: relative;
+	top:0;
+	left:-44px;
+	text-align: center;
+	width:1024px;
 
+}
 
 
 #credits li
@@ -85,12 +93,14 @@ text-decoration:none;
 display: inline;
 list-style-type: none;
 position:relative;
-left:-10px;
-margin:0px;
-padding-right:14px;
-font-size:19px;
+
+font-size:18px;
 font-family:Arial, sans-serif;
 color:#222222;
+
+}
+li:not(:last-child) {
+    margin: 9px;
 }
 
 #body
@@ -157,9 +167,30 @@ height:150px;
 margin-left:auto;
 margin-right:auto;
 padding:0px;
+font-family:Arial, sans-serif;
+color:#333333;
+
 
 }
 
+#info
+{
+position:relative;
+top:8px;
+left:0px;
+width:1024px;
+height:8px;
+margin-left:auto;
+margin-right:auto;
+padding:0px;
+font-family:Arial, sans-serif;
+color:#666666;
+text-align:center;
+font-size:16px;
+
+
+
+}
 
 #banner
 {
