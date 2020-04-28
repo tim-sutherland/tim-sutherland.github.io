@@ -8,7 +8,7 @@
                               portfolio, demo reel, recent work, filmmaker, filmmaking, instagram">
 
 <link href="stylesheet.css" rel="stylesheet">
-<link rel="icon" href="images/favicon.png">
+<link rel="icon" href="favicon.png">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156978484-1"></script>
@@ -39,6 +39,9 @@
       setTimeout("removehash()", 0101);
 </script>
 
+
+
+
 </head>
 
 <body>
@@ -68,7 +71,7 @@
 	</div>
 
   <div id="reel">
-    <video width="1024px" height="420px"  style="background-color: #000000" src="https://drive.google.com/uc?id=1AE73S0QCU5pvhVX8XoNbK69kCPIOGbiS"  controls poster="images/reelbanner.jpg" preload="metadata"></video>
+    <video  width="1024px" height="420px"  style="background-color: #000000" src="https://drive.google.com/uc?id=1AE73S0QCU5pvhVX8XoNbK69kCPIOGbiS"  controls poster="images/reelbanner.jpg" preload="metadata"></video>
   </div>
 
   <div id="steadi">
@@ -375,6 +378,20 @@ function scrollWin() {
   behavior: 'smooth'
 });
 }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7/prototype.js" type="text/javascript" charset="utf-8">
+</script>
+<script id="domloaded" type="text/javascript">
+document.observe('dom:loaded', function(evt){
+	$$('video').each(function(elm){
+	  var wrapper = elm.wrap('span');
+	  var vid = elm.clone(true);
+	  elm.observe('ended', function(){
+	    wrapper.update(vid);
+	 });
+	});
+});
 </script>
 
 </body>
