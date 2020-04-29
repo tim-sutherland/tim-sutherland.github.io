@@ -129,6 +129,27 @@ font-family:Arial, sans-serif;
 color:#333333;
 }
 
+#bio
+{
+position:relative;
+top:0px;
+left:12px;
+width:1004px;
+height:380px;
+overflow:hidden;
+scroll:none;
+padding-left:10px;
+margin:0px;
+border:none;
+outline:none;]
+background-color: #000000;
+font-family:Arial, sans-serif;
+color:#333333;
+font-size:20px;
+text-align: justify;
+display:none;
+}
+
 #left-column
 {
 position:relative;
@@ -169,27 +190,6 @@ margin-right:auto;
 padding:0px;
 font-family:Arial, sans-serif;
 color:#333333;
-
-
-}
-
-#info
-{
-position:relative;
-top:8px;
-left:0px;
-width:1024px;
-height:8px;
-margin-left:auto;
-margin-right:auto;
-padding:0px;
-font-family:Arial, sans-serif;
-color:#666666;
-text-align:center;
-font-size:16px;
-
-
-
 }
 
 #banner
@@ -206,7 +206,6 @@ hspace:0;
 marginwidth:0;
 marginheight:0;
 display:none;
-
 }
 
 #player
@@ -224,7 +223,6 @@ display:none;
   -moz-resize:none;
   resize:none;
   border:none;
-
 }
 
 
@@ -235,7 +233,6 @@ height:30px;
 position:relative;
 top:25px;
 left:12px;
-
 text-align:center;
 font-family:Arial, sans-serif;
 color:#888888;
@@ -280,7 +277,6 @@ a:active {color:#888888;}
   height:420px;
 overflow:hidden;
 scroll:none;
-
 padding:0px;
 margin:0px;
 border:none;

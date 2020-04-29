@@ -19,9 +19,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-156978484-1');
-</script>
 
-<script type = "text/javascript">
   function redirect()
   {
     if (window.location.hash === '#steadicam') {showSteadi()}
@@ -30,21 +28,149 @@
   }
     setTimeout("redirect()", 0000);
 
-</script>
-
-<script type = "text/javascript">
   function removehash() {
         history.replaceState(null, null, ' ');
       }
       setTimeout("removehash()", 0101);
+
+
+function showBio() {
+    var v = document.getElementById("bio");
+    {
+        v.style.display = "block";
+    }
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
+    var x = document.getElementById("banner");
+    {
+        x.style.display = "block";
+    }
+    var y = document.getElementById("player");
+    {
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "none";
+    }
+}
+
+
+function showSteadi() {
+    var v = document.getElementById("bio");
+    {
+        v.style.display = "none";
+    }
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "block";
+    }
+    var x = document.getElementById("banner");
+    {
+        x.style.display = "none";
+    }
+    var y = document.getElementById("player");
+    {
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "none";
+    }
+}
+
+
+function showBanner() {
+    var v = document.getElementById("bio");
+    {
+        v.style.display = "none";
+    }
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
+    var x = document.getElementById("banner");
+    {
+        x.style.display = "block";
+    }
+    var y = document.getElementById("player");
+    {
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "none";
+    }
+}
+
+function showPlayer() {
+    var v = document.getElementById("bio");
+    {
+        v.style.display = "none";
+    }
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
+      var x = document.getElementById("player");
+    {
+        x.style.display = "block";
+    }
+    var y = document.getElementById("banner");
+    {
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "none";
+    }
+}
+
+function showReel() {
+    var v = document.getElementById("bio");
+    {
+        v.style.display = "none";
+    }
+    var w = document.getElementById("steadi");
+    {
+        w.style.display = "none";
+    }
+    var x = document.getElementById("player");
+    {
+        x.style.display = "none";
+    }
+    var y = document.getElementById("banner");
+    {
+        y.style.display = "none";
+    }
+    var z = document.getElementById("reel");
+    {
+        z.style.display = "block";
+    }
+}
+
+function scrollWin() {
+  window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+});
+}
+
+
 </script>
-
-
 
 
 </head>
 
 <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7/prototype.js" type="text/javascript" charset="utf-8">
+  </script>
+  <script id="domloaded" type="text/javascript">
+    document.observe("dom:loaded",function(e){$$("video").each(function(e){var n=e.wrap("span"),o=e.clone(!0);e.observe("ended",function(){n.update(o)})})});
+  </script>
 
 <div id="main">
 
@@ -76,6 +202,19 @@
 
   <div id="steadi">
     <video width="1024px" height="420px"  style="background-color: #000000" src="https://www.googleapis.com/drive/v3/files/1zK3cfhaaNaABgfavPg0Mo1EudAJOUNk1?alt=media&key=AIzaSyBrvJ405TQ1LptxQQUkQJVNmTIKuv_pL4I"  controls poster="images/steadibanner.jpg" preload="metadata"></video>
+  </div>
+
+  <div id="bio">
+    <br><br>
+    Tim Sutherland is an International Cinematographer's Guild Cinematographer and Steadicam Operator.
+    <br><br>
+    After graduating from Taylor University in December of 2007, he moved to Los Angeles to pursue a career in film and television.
+    <br><br>
+    After working at a the camera rental house Birns and Sawyer in Hollywood, Tim joined local 600 as a Digital Intermediate Technician in 2010.  In 2013 he moved to Nashville, TN to work on the ABC show, “Nashville" and moved up to Camera Operator on season 3.
+    <br><br>
+    On season 4, Tim became the A Camera and Steadicam Operator, as well as working as the DP on scout days.  During season 6 he was the Director of Photography on 6 complete episodes.
+    <br><br>
+    Since Nashville ended, Tim has been busy working as a DP and Steadicam Operator on several features, commercials, music videos, and television shows.
   </div>
 
   <iframe name="player" id="player"  scrolling="no" src="" >
@@ -280,7 +419,7 @@
 
 	<div id="foot">
 	<br>
-	<a href="http://icg600.com" target="_blank">Cinematographer's Guild</a> | <a href="http://soc.org" target="_blank">Society of Camera Operators</a> | <a href="terms.html">Terms and Conditions</a> | <a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram</a> | <a href="https://www.imdb.com/name/nm2295019/" target="_blank">IMDB</a> | <a href="mailto:tim@tim-sutherland.com?subject=Request for References">Request References</a>
+	<a href="http://icg600.com" target="_blank">Cinematographer's Guild</a> | <a href="http://soc.org" target="_blank">Society of Camera Operators</a> | <a href="#" onclick="showBio(); scrollWin(); return false;">About Me </a> | <a href="terms.html">Terms of Use</a> | <a href="https://www.instagram.com/dptimsutherland/" target="_blank">Instagram</a> | <a href="https://www.imdb.com/name/nm2295019/" target="_blank">IMDB</a> | <a href="mailto:tim@tim-sutherland.com?subject=Request for References">Request References</a>
 	<br><br>
 	&copy; Copyright 2020 Tim Sutherland. All rights reserved.  Terms and Conditions.
 	<br>
@@ -289,110 +428,7 @@
 
 </div>
 
-<script>
-function showSteadi() {
-    var w = document.getElementById("steadi");
-    {
-        w.style.display = "block";
-    }
-    var x = document.getElementById("banner");
-    {
-        x.style.display = "none";
-    }
-    var y = document.getElementById("player");
-    {
-        y.style.display = "none";
-    }
-    var z = document.getElementById("reel");
-    {
-        z.style.display = "none";
-    }
-}
-</script>
-<script>
-function showBanner() {
-    var w = document.getElementById("steadi");
-    {
-        w.style.display = "none";
-    }
-    var x = document.getElementById("banner");
-    {
-        x.style.display = "block";
-    }
-    var y = document.getElementById("player");
-    {
-        y.style.display = "none";
-    }
-    var z = document.getElementById("reel");
-    {
-        z.style.display = "none";
-    }
-}
-</script>
 
-<script>
-function showPlayer() {
-    var w = document.getElementById("steadi");
-    {
-        w.style.display = "none";
-    }
-      var x = document.getElementById("player");
-    {
-        x.style.display = "block";
-    }
-    var y = document.getElementById("banner");
-    {
-        y.style.display = "none";
-    }
-    var z = document.getElementById("reel");
-    {
-        z.style.display = "none";
-    }
-}
-</script>
-<script>
-function showReel() {
-    var w = document.getElementById("steadi");
-    {
-        w.style.display = "none";
-    }
-    var x = document.getElementById("player");
-    {
-        x.style.display = "none";
-    }
-    var y = document.getElementById("banner");
-    {
-        y.style.display = "none";
-    }
-    var z = document.getElementById("reel");
-    {
-        z.style.display = "block";
-    }
-}
-</script>
-<script>
-function scrollWin() {
-  window.scrollTo({
-  top: 0,
-  left: 0,
-  behavior: 'smooth'
-});
-}
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7/prototype.js" type="text/javascript" charset="utf-8">
-</script>
-<script id="domloaded" type="text/javascript">
-document.observe('dom:loaded', function(evt){
-	$$('video').each(function(elm){
-	  var wrapper = elm.wrap('span');
-	  var vid = elm.clone(true);
-	  elm.observe('ended', function(){
-	    wrapper.update(vid);
-	 });
-	});
-});
-</script>
 
 </body>
 </html>
