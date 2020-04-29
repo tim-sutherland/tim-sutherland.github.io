@@ -80,7 +80,7 @@ text-decoration:none;
 #credits
 {
 	position: relative;
-	top:0;
+	top:-6px;
 	left:-44px;
 	text-align: center;
 	width:1024px;
@@ -110,7 +110,7 @@ background-color: #ffffff;
 #links
 {
 position:relative;
-top:0px;
+top:-6px;
 left:12px;
 width:1034px;
 height:auto;
@@ -195,7 +195,7 @@ color:#333333;
 #banner
 {
 position:relative;
-top:0px;
+top:-6px;
 left:12px;
 width:1024px;
 height:260px;
@@ -210,7 +210,8 @@ display:none;
 
 #player
 {
-
+	position:relative;
+	top:-6px;
   width:1024px;
   height:420px;
   display:none;
@@ -271,7 +272,7 @@ a:active {color:#888888;}
 #reel
 {
   position:relative;
-  top:0px;
+  top:-6px;
   left:12px;
   width:1024px;
   height:420px;
@@ -293,7 +294,7 @@ video:focus {
 #steadi
 {
   position:relative;
-  top:0px;
+  top:-6px;
   left:12px;
   width:1024px;
   height:420px;
@@ -312,4 +313,16 @@ display:none;
 }
 steadi:focus {
      outline: 0;
+}
+
+#top
+{
+	position:relative;
+	top:0px;
+	left:12px;
+	width:1024px;
+	height:6px;
+	font-size: 18px;
+	font-family:Arial, sans-serif;
+	color:#333333;
 }
