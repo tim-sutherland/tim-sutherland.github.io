@@ -318,6 +318,30 @@ steadi:focus {
      outline: 0;
 }
 
+#techno
+{
+  position:relative;
+  top:-6px;
+  left:12px;
+  width:1024px;
+  height:420px;
+overflow:hidden;
+scroll:none;
+
+padding:0px;
+margin:0px;
+border:none;
+outline:none;]
+background-color: #000000;
+-webkit-mask-image: -webkit-radial-gradient(white, black);
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+display:none;
+}
+techno:focus {
+     outline: 0;
+}
+
 #top
 {
 	position:relative;
