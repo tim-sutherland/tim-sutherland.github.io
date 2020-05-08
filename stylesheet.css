@@ -132,10 +132,10 @@ color:#333333;
 #bio
 {
 position:relative;
-top:0px;
+top:20px;
 left:12px;
 width:1004px;
-height:380px;
+height:290px;
 overflow:hidden;
 scroll:none;
 padding-left:10px;
@@ -145,8 +145,11 @@ outline:none;]
 background-color: #000000;
 font-family:Arial, sans-serif;
 color:#333333;
-font-size:20px;
+font-size:18px;
+font-style: italic;
 text-align: justify;
+column-count: 2;
+column-gap: 48px;
 display:none;
 }
 
