@@ -2,7 +2,7 @@
 <html class="staticrypt-html">
 <head>
     <meta charset="utf-8">
-    <title>Protected Page</title>
+    <title>HyperStream Content</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- do not cache this page -->
@@ -117,8 +117,9 @@
 <div class="staticrypt-page">
     <div class="staticrypt-form">
         <div class="staticrypt-instructions">
-            <p class="staticrypt-title">Protected Page</p>
-            <p></p>
+            <p class="staticrypt-title">HyperStream Content</p>
+            <p><p>Please enter the password to continue:</p>
+</p>
         </div>
 
         <hr class="staticrypt-hr">
@@ -6164,7 +6165,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = 'c0d0292c2db5508b5adc030d3a32f59409cb4a7d1ca9773a293af14da9a5ff93932feb5e9bd526a6410ce5cdb7232ce8454872806126bd619157f9fca8c8f15cx/x7ydKv2yTslIShmCHuM5oHQ0jioro190uBVCF//+wDIu1nlbn/u/WTKvBGhMuLti/8FXimGjbJk1EHQchYs/Ob7ZNbC+ImN3VaVgQ1oHI+G8hpyeyqf1+lhskwjCk9vblgmN4bZXw78Hf49wpA9ds5ubb8vfAxEVEfl0e/hxFAQoZngb4oiy/UCKGjCP2h7KdYqxOmmZBEmRegB2yEGDOXUX6iDWGREoHO7E6vrCNASxvuLAp3g+gB7EnPRihahwGhVsQog92TboDac1J2eeyjBrYkJd9sBCwZZQLJA1cvPHQAyypq7oLpOVyKFTiN',
+            encryptedMsg = 'be6983132466b981064878afb6d2e72634ea429f4d09fbb63b97e28372f34df35706aac35b25c5d931d9429eb6a7d81f4b6d67ba677146c69090c55f4b61140dxQWSzprMGlvZoR61GSaYjfQFVWkKuXokDTN4GQ8dNL32CdGx2clH5WI8GjsW6mlrX8E62ZHwnjz1zsFUzJO6ti4QhbkP6DWTc8oGETB3NJRLRwUYHz5MzBcV6kRnvIr0DkoWyqcWEUUZ/vZMxALQ5JZoqu7kJs+GNnPeJ++5UWVEQ7Ywa0vW1mc6qOHGtUb+b7hjQwzoLbKUF2eNeWpUDYbsnKDhBcG/DS7FTaG9qW+F5xer9gFFTuCkSZKYsNaUZDDewBoSN8HcLq7asfCdKDRUqhL1roNa0eZ3v/aUU1AHCqtyrK4SBRCGqphey0ujy6Db2gya7gKHczHMUGwZDpbLc/RZ4t9D73w6toz0H8YyOnzxFEqkiHJA5GKHgnPHO3oCUUKW6aDwpGYpctOYMDvo5w6u47/g1+Ee/R7kDjRU6p1aPKCFXIYarR0wR5qPeRol1xiA6t3vDbmzyNry9e99gVSKJ+HTGWZK0q5NdNM=',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();
