@@ -208,7 +208,7 @@ vspace:0;
 hspace:0;
 marginwidth:0;
 marginheight:0;
-
+display:none
 }
 
 #player
@@ -289,7 +289,7 @@ background-color: #000000;
 -webkit-mask-image: -webkit-radial-gradient(white, black);
 -webkit-backface-visibility: hidden;
 -moz-backface-visibility: hidden;
-display:none;
+
 }
 video:focus {
      outline: 0;
@@ -352,4 +352,10 @@ techno:focus {
 	font-size: 18px;
 	font-family:Arial, sans-serif;
 	color:#333333;
+}
+
+video::-webkit-media-controls-panel {
+ background-image: none !important;
+ filter: brightness(0.4);
+
 }
