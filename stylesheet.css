@@ -81,7 +81,7 @@ text-decoration:none;
 {
 	position: relative;
 	top:-6px;
-	left:-44px;
+	left:-46px;
 	text-align: left;
 	width:1024px;
 
@@ -110,7 +110,7 @@ background-color: #ffffff;
 #links
 {
 position:relative;
-top:-6px;
+top:-15px;
 left:12px;
 width:1034px;
 height:auto;
@@ -208,7 +208,7 @@ vspace:0;
 hspace:0;
 marginwidth:0;
 marginheight:0;
-display:none;
+display:block;
 }
 
 #player
@@ -278,7 +278,7 @@ a:active {color:#888888;}
   top:-6px;
   left:12px;
   width:1024px;
-  height:420px;
+  height:576px;
 overflow:hidden;
 scroll:none;
 padding:0px;
