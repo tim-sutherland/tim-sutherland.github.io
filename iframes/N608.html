@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="sliderStyle.css">
+  </head>
+  <body>
+
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1" checked onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 2">
+        <input type="radio" name="radio-btn" id="radio2" onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 3">
+        <input type="radio" name="radio-btn" id="radio3" onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 4">
+        <input type="radio" name="radio-btn" id="radio4" onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 5">
+        <input type="radio" name="radio-btn" id="radio5" onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 1">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="slider/N608-1.jpg" alt="">
+          <div class="info">
+            <h2>Nashville</h2>
+            <h4>Television Series | Season 6 Episode 8</h4>
+            <image src="hululogo.png" style="position:absolute;top:58px;left:290px;width:108px;height:40px"></image>
+            <p><a href="https://www.hulu.com/watch/d65683cb-46bd-495f-b732-b840c8f6eac3" target="_blank">Watch Episode on Hulu</a> <br> <a target="_blank" href="https://www.youtube.com/watch?v=DMgFBjCXqYo?autoplay=1">Watch Trailer on Youtube</a></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="slider/N608-2.jpg" alt="">
+          <div class="info">
+            <h2>Nashville</h2>
+            <h4>Television Series | Season 6 Episode 8</h4>
+            <image src="hululogo.png" style="position:absolute;top:58px;left:290px;width:108px;height:40px"></image>
+            <p><a href="https://www.hulu.com/watch/d65683cb-46bd-495f-b732-b840c8f6eac3" target="_blank">Watch Episode on Hulu</a> <br> <a target="_blank" href="https://www.youtube.com/watch?v=DMgFBjCXqYo?autoplay=1">Watch Trailer on Youtube</a></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="slider/N608-3.jpg" alt="">
+          <div class="info">
+            <h2>Nashville</h2>
+            <h4>Television Series | Season 6 Episode 8</h4>
+            <image src="hululogo.png" style="position:absolute;top:58px;left:290px;width:108px;height:40px"></image>
+            <p><a href="https://www.hulu.com/watch/d65683cb-46bd-495f-b732-b840c8f6eac3" target="_blank">Watch Episode on Hulu</a> <br> <a target="_blank" href="https://www.youtube.com/watch?v=DMgFBjCXqYo?autoplay=1">Watch Trailer on Youtube</a></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="slider/N608-4.jpg" alt="">
+          <div class="info">
+            <h2>Nashville</h2>
+            <h4>Television Series | Season 6 Episode 8</h4>
+            <image src="hululogo.png" style="position:absolute;top:58px;left:290px;width:108px;height:40px"></image>
+            <p><a href="https://www.hulu.com/watch/d65683cb-46bd-495f-b732-b840c8f6eac3" target="_blank">Watch Episode on Hulu</a> <br> <a target="_blank" href="https://www.youtube.com/watch?v=DMgFBjCXqYo?autoplay=1">Watch Trailer on Youtube</a></p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="slider/N608-5.jpg" alt="">
+          <div class="info">
+            <h2>Nashville</h2>
+            <h4>Television Series | Season 6 Episode 8</h4>
+            <image src="hululogo.png" style="position:absolute;top:58px;left:290px;width:108px;height:40px"></image>
+            <p><a href="https://www.hulu.com/watch/d65683cb-46bd-495f-b732-b840c8f6eac3" target="_blank">Watch Episode on Hulu</a> <br> <a target="_blank" href="https://www.youtube.com/watch?v=DMgFBjCXqYo?autoplay=1">Watch Trailer on Youtube</a></p>
+          </div>
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+    <script type="text/javascript">
+    var counter = 2;
+    function slideAction(){document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 5){
+      counter = 1;
+    }
+  };
+    var myTimer = setInterval(slideAction, 8000);
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="sliderStyle.css">
+  </head>
+  <body>
+
+    <!--image slider start-->
+    <div class="bannerslider">
+      <div class="bannerslides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1" checked onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 2">
+        <input type="radio" name="radio-btn" id="radio2" onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 3">
+        <input type="radio" name="radio-btn" id="radio3" onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 4">
+        <input type="radio" name="radio-btn" id="radio4" onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 5">
+        <input type="radio" name="radio-btn" id="radio5" onclick="clearInterval(myTimer);myTimer = setInterval(slideAction, 8000);counter = 1">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="bannerslide first">
+          <img src="slider/Banner-1.jpg" alt="">
+        </div>
+        <div class="bannerslide">
+          <img src="slider/Banner-2.jpg" alt="">
+        </div>
+        <div class="bannerslide">
+          <img src="slider/Banner-3.jpg" alt="">
+        </div>
+        <div class="bannerslide">
+          <img src="slider/Banner-4.jpg" alt="">
+        </div>
+        <div class="lastbannerslide">
+          <img src="slider/Banner-5.jpg" alt="">
+        </div>
+        <!--slide images end-->
+
+      </div>
+
+    </div>
+    <!--image slider end-->
+
+
+    <script type="text/javascript">
+    var counter = 2;
+    function slideAction(){document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 5){
+      counter = 1;
+    }
+  };
+    var myTimer = setInterval(slideAction, 6000);
+    </script>
+
+  </body>
+</html>
