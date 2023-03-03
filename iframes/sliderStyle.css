@@ -123,6 +123,33 @@ body{
   margin-left: -80%;
 }
 
+#reel-links{
+  position: absolute;
+  top:220px;
+  left:70px;
+  font-size: 30px;
+	font-family:Arial, sans-serif;
+  color:white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#reel-links a{
+  text-decoration:none;
+  color:inherit;
+}
+
+#reel-links li
+{
+display: inline;
+list-style-type: none;
+position:relative;
+
+
+}
+li:not(:last-child) {
+    margin-right: 200px;
+}
+
 /*css for automatic navigation*/
 
 .navigation-auto{
